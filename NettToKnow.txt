@@ -1,0 +1,9 @@
+JS Node: 
+    Runs JS on Sever Side
+    Doesnt have Window Property -> Just has Global
+
+
+Moduls: 
+    Can Create Own Moduals -> Functions/Code to Import modual.export = {funcname 1, funcname 2 ....}
+    Or use export.(funcname/var) = Stuff
+        makes these Availibale with: const modualName = require('./classname') -> or destructrue 
