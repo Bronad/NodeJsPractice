@@ -7,3 +7,6 @@ Moduls:
     Can Create Own Moduals -> Functions/Code to Import modual.export = {funcname 1, funcname 2 ....}
     Or use export.(funcname/var) = Stuff
         makes these Availibale with: const modualName = require('./classname') -> or destructrue 
+
+Npm:
+    Installer for Third Party Software. Has Own Doc.
