@@ -1,0 +1,20 @@
+{
+  "name": "nodejspractice",
+  "version": "1.0.0",
+  "description": "NodeJS Practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Step3/index",
+    "dev": "nodemon ./Step3/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

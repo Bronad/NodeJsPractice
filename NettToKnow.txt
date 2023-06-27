@@ -2,6 +2,11 @@ JS Node:
     Runs JS on Sever Side
     Doesnt have Window Property -> Just has Global
 
+    When importing Dependencies, the ^ locks a version number in Place
+        ->^8.3.2 only minor updates. nothing that changes the 8
+        -> * allows everythin
+        -> ~8.3.2 only updates on big changes
+
 
 Moduls: 
     Can Create Own Moduals -> Functions/Code to Import modual.export = {funcname 1, funcname 2 ....}
@@ -10,3 +15,4 @@ Moduls:
 
 Npm:
     Installer for Third Party Software. Has Own Doc.
+    Most Used is CLI
