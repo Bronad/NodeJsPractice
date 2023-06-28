@@ -128,7 +128,6 @@ const server = http.createServer((req, res) => {
                 serveFile(path.join(__dirname, 'views', '404.html'), 'text/html', res);
         };
     }
-
 });
 
 //
