@@ -39,7 +39,7 @@ const three = (req, res) => {
     res.send('Finished!');
 }
 // here is the request, Just give a array of the Funtions that follow each other
-// the order in witch is Binding, Next has to be there
+// the order in witch is Binding, Next has to be there 
 app.get('/chain(.html)?', [one,two,three]);
 
 
