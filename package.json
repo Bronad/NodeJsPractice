@@ -2,10 +2,10 @@
   "name": "nodejspractice",
   "version": "1.0.0",
   "description": "NodeJS Practice",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./Step3/index",
-    "dev": "nodemon ./Step3/index"
+    "start": "node ./Step5/server",
+    "dev": "nodemon ./Step5/server"
   },
   "keywords": [],
   "author": "",
