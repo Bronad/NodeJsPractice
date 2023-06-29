@@ -1,7 +1,17 @@
+const exp = require('constants');
 const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3500;
+
+// Express Middleware that handles url encoded Data
+app.use(express.urlencoded({ extended: false}));
+
+// built in middleware for Json
+app.use(express.json());
+
+// serving static files
+app.use(express.static(path.join(__dirname, '/public')));
 
 // In Express an ^ Means it should start with -> $ is the End of that
 // In Express an | Means or
