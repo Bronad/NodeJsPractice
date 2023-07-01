@@ -4,6 +4,13 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3500;
 
+//time for a logger
+// sollte für aufrufe GET geben
+app.use((req, res, next) => {
+    console.log(`${req.method} ${res.method}`);
+    next();
+});
+
 // Express Middleware that handles url encoded Data
 app.use(express.urlencoded({ extended: false}));
 
