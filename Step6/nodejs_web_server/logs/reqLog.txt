@@ -1,0 +1,8 @@
+01.07.2023	15:59:01	36a641e8-5182-4c97-8441-ba0b78da5337	GET	undefined	/index.html
+01.07.2023	15:59:01	b5c67d78-07c9-40f6-acff-0dcda3798f03	GET	undefined	/css/style.css
+01.07.2023	16:04:40	37702d19-7608-471b-98d1-1f9c4b2de093	GET	undefined	/index.html
+01.07.2023	16:04:40	5d7165c7-c65a-4c99-a01f-99209e7b2f12	GET	undefined	/css/style.css
+01.07.2023	16:05:16	394701ea-ed64-4a84-bd3b-d1c968c63e09	OPTIONS	https://www.google.de	/index.html
+01.07.2023	16:05:16	88a3ba72-084b-45b0-8fb8-b06c78314128	GET	https://www.google.de	/index.html
+01.07.2023	16:19:31	07e493aa-49b3-4c05-aae5-5e09ff4ba388	OPTIONS	https://www.google.de	/index.html
+01.07.2023	16:19:31	38697e59-41ad-4240-a59f-ddde64190d1f	GET	https://www.google.de	/index.html

@@ -2,14 +2,31 @@ const exp = require('constants');
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
+const {logger} = require('./middleware/logEvents');
 const PORT = process.env.PORT || 3500;
 
 //time for a logger
 // sollte für aufrufe GET geben
-app.use((req, res, next) => {
-    console.log(`${req.method} ${res.method}`);
-    next();
-});
+app.use(logger);
+
+//cors stands for Cross Origin Resource Sharing
+//Normaly you dont wanna just allow that for everybody 
+// yoursite.com is the FrontEnd to allow com and data exchange
+const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
+// Checks if Element is in the White list, -1 Means Error
+const corsOptions = {
+    origin: (origin, callback) => {
+        //!origin is for developement, as we dont have one in dev.
+        if (whitelist.indexOf(origin) !== -1 || !origin) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    optionsSuccessStatus: 200
+}
+app.use(cors());
 
 // Express Middleware that handles url encoded Data
 app.use(express.urlencoded({ extended: false}));
