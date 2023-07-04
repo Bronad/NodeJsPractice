@@ -1,0 +1,11 @@
+20230704	20:51:50	b5c332ab-7d56-4e77-8989-40f8f2aab793	GET	undefined	/index.html
+20230704	20:51:50	b1d113e5-546d-43f6-bf8d-46f7b10074bd	GET	undefined	/css/style.css
+20230704	20:51:50	74e20c06-99e9-48b9-96f5-f4ea1533a162	GET	undefined	/favicon.ico
+20230704	20:52:06	401a39bd-4f08-4f9d-9dc4-adc9f489a3a9	GET	undefined	/index.html
+20230704	20:52:07	842eea4a-d0fe-43fb-a17a-911ee5ad2e1f	GET	undefined	/css/style.css
+20230704	20:52:13	f2228b61-1201-4b32-83a4-5d34f8757dce	GET	undefined	/data/data.txt
+20230704	20:52:13	607ad2d4-7767-4916-99d8-1d1e2b4f6c3d	GET	undefined	/data/css/style.css
+20230704	20:52:20	e9f40f4b-cfc5-4fe8-85ef-d0bc5d5e68d5	GET	undefined	/subdir
+20230704	20:52:30	87c3d56c-1162-4074-b70f-c5d4d9fd2304	GET	undefined	/subdir/test
+20230704	20:52:47	2a3ff368-cc24-41f7-9d86-60d5d3c0ec51	GET	undefined	/subdir/Bla
+20230704	20:52:47	a3f04d5e-ca1b-4043-bf3a-2bf96f334317	GET	undefined	/subdir/css/style.css
