@@ -32,10 +32,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //serve static files
-app.use(express.static(path.join(__dirname, '/public')));
+app.use('/', express.static(path.join(__dirname, '/public')));
+// Makes the Public folder available for the subdir 
+app.use('/subdir',express.static(path.join(__dirname, '/public')));
 
 // Will route and check for routes to the subdir folder.
+// App use does support regex in app.use
+
+//routes are here.
+app.use('/', require('./routes/root.js'));
 app.use('/subdir', require('./routes/subdir'));
+app.use('/employees', require('./routes/api/employees'));
 
 app.get('^/$|/index(.html)?', (req, res) => {
     //res.sendFile('./views/index.html', { root: __dirname });
@@ -50,7 +57,7 @@ app.get('/old-page(.html)?', (req, res) => {
     res.redirect(301, '/new-page.html'); //302 by default
 });
 
-// Route handlers
+/* // Route handlers
 app.get('/hello(.html)?', (req, res, next) => {
     console.log('attempted to load hello.html');
     next()
@@ -75,7 +82,7 @@ const three = (req, res) => {
     res.send('Finished!');
 }
 
-app.get('/chain(.html)?', [one, two, three]);
+app.get('/chain(.html)?', [one, two, three]); */
 
 // custimize 404, will apply to all Http at once. Suited for Routing
 app.all('*', (req, res) => {
