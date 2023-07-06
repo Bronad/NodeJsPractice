@@ -42,3 +42,4 @@
 20230705	13:40:41	7c36759b-4b84-4d82-abab-a3b1c65347a5	DELETE	undefined	/employees
 20230705	13:57:20	f1526dcb-277f-46a5-9edc-ee13d95c16df	DELETE	undefined	/employees
 20230705	13:57:55	842ea855-4b70-4871-a23b-46961ada433d	GET	undefined	/employees/1
+20230706	10:10:41	4378ea1a-2618-4ffb-89ed-68a4b2e1089b	GET	undefined	/css/style.css
