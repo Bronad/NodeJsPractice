@@ -48,3 +48,6 @@
 20230706	19:13:32	30b9ef1b-067a-43b6-958d-721caf49385f	POST	undefined	/auth
 20230706	19:13:36	35684e8d-ce86-4e48-8b81-ef983b14e20d	POST	undefined	/auth
 20230706	19:13:52	49fd1a95-7484-43f3-b1d3-76514d346196	POST	undefined	/register
+20230707	21:41:52	02cee49a-a6ad-4555-8025-5af60324187c	POST	undefined	/auth
+20230707	22:32:20	cdb6ef59-adbd-4adb-b975-54e6983b0248	POST	undefined	/register
+20230707	22:32:27	7d012d62-d8ea-4801-b888-134efffaeffa	POST	undefined	/auth
