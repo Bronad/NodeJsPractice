@@ -20,6 +20,7 @@ const verifyJWT = (req, res, next) => {
         //Decoded is the user token that is decoded, Err happens when its invalid 
         (err, decoded) => {
             if(err) return res.sendStatus(403); // invalid Token
+            // setting username of valid user in req.user
             req.user = decoded.username;
             next();
         }
