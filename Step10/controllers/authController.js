@@ -38,7 +38,7 @@ const handleLogin = async (req, res) => {
         // Current User and the fitting refresh token
         const currentUser = {...foundUser, refreshToken};
         // Add User & refresh Token in an Array in the big User List Array
-        usersDB.setUsers([...otherUserm, currentUser]);
+        usersDB.setUsers([...otherUser, currentUser]);
         
         // Writing that to a User File, our Database substitution
         await fsPromises.writeFile(
@@ -48,11 +48,12 @@ const handleLogin = async (req, res) => {
 
             //Cookies & local Storage is not safe for the Tokens.
             // Best case in Memory
-            //Still gonna Try in Cookies tho
+            //  Still gonna Try in Cookies tho
             // Making a cookie here. httponly is not available in JS
-            // 
+            // Best call here
         res.cookie('jwt', refreshToken, {httpOnly: true, maxAge: 24*60*60*1000});
         // This is to Grab by the FrontEnd Dev
+        // Best to Safe in Memory
         res.json({ accessToken });
     }else {
         res.sendStatus(401);
