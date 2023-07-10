@@ -19,7 +19,7 @@ const handleRefreshToken = (req, res) => {
     // Evaluate JWt
     jwt.verify(
         refreshToken,
-        process.env.ACCESS_TOKEN_SECRET,
+        process.env.REFRESH_TOKEN_SECRET ,
         (err, decoded) => {
             if(err || foundUser.username !== decoded.username) return res.sendStatus(403); // Forbidden
             const accessToken = jwt.sign(
