@@ -67,3 +67,6 @@
 20230710	16:01:26	302d7d44-3add-4770-9539-ba87792e6877	GET	undefined	/refresh
 20230710	16:05:47	9a7d3ea2-dee9-4cd4-97f3-b4783f2b6c16	POST	undefined	/auth
 20230710	16:05:49	254b9210-0596-4eb1-b71a-8fc6cf54af0d	GET	undefined	/refresh
+20230710	23:09:20	ebe082a6-3f9e-4b8b-9684-9194ba1eba18	POST	undefined	/auth
+20230710	23:10:10	d0bf2d47-2a47-45d0-b9ee-36bebd863ec6	GET	undefined	/logout
+20230710	23:10:28	542af706-521a-4b24-adc5-7cc6030a3141	GET	undefined	/refresh
