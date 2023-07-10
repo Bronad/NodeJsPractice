@@ -15,7 +15,7 @@ const handleLogin = async (req, res) => {
     // Check if Data was given
     if (!user || !pwd) return res.status(400).json({'message': 'Username and Password are required.'});
     // Check if Username is already Taken
-    const foundUser = usersDB.users.find((person) => person.username === user);
+    const foundUser = usersDB.users.find(person => person.username === user);
     if(!foundUser) return res.sendStatus(401); // Unauthorized
 
     const match = await bcrypt.compare(pwd, foundUser.password);
@@ -24,7 +24,7 @@ const handleLogin = async (req, res) => {
         const accessToken = jwt.sign(
             // Here u should never Use Passwords as they would easyly be optainable
             {"username": foundUser.username},
-            process.env.ACCESS_TOKEN_SECERT ,
+            process.env.ACCESS_TOKEN_SECERT,
             { expiresIn: '30s'}
         );
         const refreshToken = jwt.sign(
@@ -33,9 +33,14 @@ const handleLogin = async (req, res) => {
             process.env.REFRESH_TOKEN_SECERT,
             { expiresIn: '1d'}
         );
+        // Array without the current user
         const otherUser = usersDB.users.filter(person => person.username !== foundUser.username);
+        // Current User and the fitting refresh token
         const currentUser = {...foundUser, refreshToken};
+        // Add User & refresh Token in an Array in the big User List Array
         usersDB.setUsers([...otherUserm, currentUser]);
+        
+        // Writing that to a User File, our Database substitution
         await fsPromises.writeFile(
             path.join(__dirname, '..', 'model', 'users.json'),
             JSON.stringify(usersDB.users)
