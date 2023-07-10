@@ -32,7 +32,10 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
+app.use('/refresh', require('./routes/refresh'));
+
 // Means that only Employees will be checked
+
 app.use(verifyJWT);
 app.use('/employees', require('./routes/api/employees'));
 
