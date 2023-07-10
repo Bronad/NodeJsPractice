@@ -2,6 +2,7 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
+// This middleware will check for autherization
 const verifyJWT = (req, res, next) => {
     const authHeader = req.headers['autherization'];
     if(!authHeader) return res.sendStatus(401);

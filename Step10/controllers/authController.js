@@ -50,7 +50,7 @@ const handleLogin = async (req, res) => {
             // Best case in Memory
             //  Still gonna Try in Cookies tho
             // Making a cookie here. httponly is not available in JS
-            // Best call here
+            // Best call here, not really safe tho
         res.cookie('jwt', refreshToken, {httpOnly: true, maxAge: 24*60*60*1000});
         // This is to Grab by the FrontEnd Dev
         // Best to Safe in Memory
