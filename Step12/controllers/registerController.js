@@ -22,7 +22,6 @@ const handleNewUser = async (req, res) => {
         // newUser.username = name;
         // newUser.password = passwort;
         // const result = await newUser.save();
-        // 6:11:06
         
         console.log(result);
 
